@@ -1,11 +1,12 @@
 {
-  "name": "ocr-scan",
+  "name": "image-ocr",
   "version": "1.0.0",
   "description": "ocr images to text using google vision",
   "main": "server.js",
   "type": "module",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "test": "mv public/.gitignore .publicgitignore && rm -r public && mkdir public && mv .publicgitignore public/.gitignore && cd react-client && npm run build && mv ./build/* ../public/ && cd .. && node server.js"
   },
   "keywords": [],
   "author": "devnullsans",

@@ -1,6 +1,9 @@
+import { config } from "dotenv";
 import express from "express";
 import fetch from "node-fetch";
 import cors from "cors";
+
+config();
 
 const app = express();
 
